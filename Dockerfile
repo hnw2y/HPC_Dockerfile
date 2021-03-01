@@ -92,6 +92,11 @@ RUN cat /etc/ssh/ssh_host_ecdsa_key.pub >> /home/jovyan/.ssh/known_hosts
 RUN chmod 600 /home/jovyan/.ssh/known_hosts
 RUN chown -R jovyan /home/jovyan/.ssh
 
+# getting gromacs.sif file -------------------------
+RUN wget https://drive.google.com/file/d/1bkyOGIe4T3GUCnr_6MHwXnn5ssgGFHXm/view?usp=sharing
+RUN mv 'view?ups=sharing' gromacs.sif
+COPY gromacs.sif home/jovyan/work
+#---------------------------------------------------
 
 CMD /usr/local/bin/start_services.sh
 

@@ -92,7 +92,6 @@ RUN cat /etc/ssh/ssh_host_ecdsa_key.pub >> /home/jovyan/.ssh/known_hosts
 RUN chmod 600 /home/jovyan/.ssh/known_hosts
 RUN chown -R jovyan /home/jovyan/.ssh
 
-
 CMD /usr/local/bin/start_services.sh
 
 

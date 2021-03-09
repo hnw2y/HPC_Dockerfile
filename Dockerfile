@@ -93,6 +93,3 @@ RUN chmod 600 /home/jovyan/.ssh/known_hosts
 RUN chown -R jovyan /home/jovyan/.ssh
 
 CMD /usr/local/bin/start_services.sh
-
-
-USER jovyan

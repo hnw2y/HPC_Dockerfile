@@ -7,4 +7,4 @@ service rpcbind start
 service nfs-common start
 service munge start
 service slurmd start
-exec su - jovyan
+exec su - jovyan -c "sleep infinity"
